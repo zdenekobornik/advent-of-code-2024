@@ -20,13 +20,11 @@ fun main() {
             .sumOf { it.groupValues[1].toInt() * it.groupValues[2].toInt() }
     }
 
-    // Or read a large test input from the `src/Day01_test.txt` file:
     val testInput = readInput("Day03_test").joinToString(separator = "")
     val testInput2 = readInput("Day03_test2").joinToString(separator = "")
     check(part1(testInput) == 161)
     check(part2(testInput2) == 48)
 
-    // Read the input from the `src/Day01.txt` file.
     val input = readInput("Day03").joinToString(separator = "")
     part1(input).println()
     part2(input).println()

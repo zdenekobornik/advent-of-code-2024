@@ -59,14 +59,12 @@ fun main() {
         }
     }
 
-    // Or read a large test input from the `src/Day01_test.txt` file:
     val testInput = readInput("Day04_test")
     val testInput2 = readInput("Day04_test2")
     println(part2(testInput2))
     check(part1(testInput) == 18)
     check(part2(testInput2) == 9)
 
-    // Read the input from the `src/Day01.txt` file.
     val input = readInput("Day04")
     part1(input).println()
     part2(input).println()
